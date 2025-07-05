@@ -23,4 +23,27 @@ Fast anomaly detection
 | **3. Diffusion Operator** | Amplify the marked state's probability                              |
 | **4. Measurement**        | Collapse the superposition and get the optimal result               |
 
+📊 Expected Output:
+The histogram should show a high probability for 11, the correct solution in this 2-qubit search space.
 
+📄 Summary for Report
+Use Case:
+Quantum-enhanced AI can drastically reduce search time in applications like drug discovery, feature selection, and optimization problems.
+
+Advantages:
+
+Faster convergence to optimal results
+
+Scales efficiently with problem size
+
+Complements classical AI pipelines
+
+Limitations:
+
+Hardware is still in early stages
+
+Requires quantum-compatible algorithms
+
+Noise and decoherence are active challenges
+
+Conclusion: Even a simple Grover’s Algorithm simulation highlights how quantum computing could revolutionize AI’s performance in complex domains.
