@@ -1,0 +1,26 @@
+🧪 Bonus Task – Quantum Computing Simulation with IBM Quantum Experience
+💡 Objective:
+Use IBM Quantum Experience to build a basic quantum circuit that demonstrates how quantum computing can optimize an AI task, like speeding up search or inference.
+
+📘 Concept Title:
+Quantum Circuit for Accelerated Search using Grover’s Algorithm
+
+✅ Why This Matters:
+Traditional AI systems perform search and optimization linearly, which becomes inefficient for large datasets. Grover’s Algorithm is a quantum search algorithm that finds the desired item in an unsorted dataset in √N time, significantly faster than classical methods.
+
+This can be applied to:
+
+Drug discovery (searching molecular combinations)
+
+Feature selection in ML models
+
+Fast anomaly detection
+
+| Step                      | Description                                                         |
+| ------------------------- | ------------------------------------------------------------------- |
+| **1. Initialization**     | Start with two qubits in a superposition state using Hadamard gates |
+| **2. Oracle**             | Mark the target state (solution) by flipping its amplitude          |
+| **3. Diffusion Operator** | Amplify the marked state's probability                              |
+| **4. Measurement**        | Collapse the superposition and get the optimal result               |
+
+
