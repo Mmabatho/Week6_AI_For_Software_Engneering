@@ -1,4 +1,3 @@
-# Week6_AI_For_Software_Engneering
 # 🤖 AI Future Directions Project – PLP Academy 2025
 
 Welcome to the official repository for the **"Pioneering Tomorrow's AI Innovations"** assignment submitted for the PLP Academy. This project explores cutting-edge AI domains including Edge AI, AI-IoT, Human-AI Collaboration, Quantum AI, and Personalized Medicine.
