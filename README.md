@@ -67,8 +67,7 @@ AI_Future_Directions_Project/
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-username/ai-future-directions.git
-cd ai-future-directions
+[git clone (https://github.com/Mmabatho/Week6_AI_For_Software_Engneering.git)
 ```
 
 2. Install dependencies:
