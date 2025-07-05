@@ -1,0 +1,32 @@
+from qiskit import QuantumCircuit, Aer, transpile, assemble, execute
+from qiskit.visualization import plot_histogram
+from qiskit.circuit.library import GroverOperator
+import matplotlib.pyplot as plt
+
+# Step 1: Create a basic 2-qubit quantum circuit
+qc = QuantumCircuit(2)
+qc.h([0, 1])  # Put both qubits into superposition
+
+# Step 2: Apply an oracle (mark the solution |11>)
+qc.cz(0, 1)
+
+# Step 3: Apply diffusion (inversion about the mean)
+qc.h([0, 1])
+qc.x([0, 1])
+qc.cz(0, 1)
+qc.x([0, 1])
+qc.h([0, 1])
+
+# Step 4: Measure
+qc.measure_all()
+
+# Simulate
+simulator = Aer.get_backend('qasm_simulator')
+qobj = assemble(transpile(qc, simulator), shots=1024)
+result = execute(qc, simulator).result()
+counts = result.get_counts()
+
+# Visualize
+plot_histogram(counts)
+plt.title("Grover's Algorithm Output")
+plt.show()
